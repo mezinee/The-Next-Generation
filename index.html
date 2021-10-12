@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>The Next Generation</title>
+   <style type="text/css">
+      body {
+         background-image: url('back2.gif');
+         width: 100%;
+         background-size: 100%;
+         background-repeat: no-repeat;
+      }
+
+      .wrap {
+         /* position: absolute;
+         animation-name: myMove;
+         animation-duration: 24s;
+         animation-delay: 0; */
+         display: none;
+         animation: fadein 25s;
+         -webkit-animation: fadein 25s;
+         -o-animation: fadein 25s; 
+      }
+
+      .list {
+         position: absolute;
+         animation-name: myMove;
+         animation-duration: 8s;
+         animation-delay: 22s;
+         animation-fill-mode: forwards;
+         top: 180px;
+      }
+
+      .list:nth-child(2) {
+         top: 215px;
+         animation-duration: 5s;
+         animation-delay: 31s;
+      }
+
+      .list:nth-child(3) {
+         top: 250px;
+         animation-duration: 5s;
+         animation-delay: 35s;
+      }
+
+      .list:nth-child(4) {
+         top: 295px;
+         animation-duration: 5s;
+         animation-delay: 40s;
+      }
+
+      .list:nth-child(5) {
+         top: 330px;
+         animation-duration: 5s;
+         animation-delay: 44s;
+      }
+
+      .list:nth-child(6) {
+         top: 365px;
+         animation-duration: 8s;
+         animation-delay: 49s;
+      }
+
+      .list:nth-child(7) {
+         top: 405px;
+         animation-duration: 7s;
+         animation-delay: 75s;
+      }
+
+      .list:nth-child(8) {
+         top: 440px;
+         animation-duration: 9s;
+         animation-delay: 84s;
+      }
+
+      .list:nth-child(9) {
+         top: 485px;
+         animation-duration: 8s;
+         animation-delay: 93s;
+      }
+
+      .list:nth-child(10) {
+         top: 520px;
+         animation-duration: 9s;
+         animation-delay: 102s;
+      }
+
+      .list:nth-child(11) {
+         top: 565px;
+         animation-duration: 5s;
+         animation-delay: 129s;
+      }
+
+      .list:nth-child(12) {
+         top: 610px;
+         animation-duration: 5s;
+         animation-delay: 138s;
+      }
+
+      .list:nth-child(13) {
+         top: 655px;
+         animation-duration: 9s;
+         animation-delay: 142s;
+      }
+
+      .list:nth-child(14) {
+         top: 690px;
+         animation-duration: 9s;
+         animation-delay: 150s;
+      }
+
+
+      .list:nth-child(15) {
+         top: 725px;
+         animation-duration: 7s;
+         animation-delay: 159s;
+      }
+
+      .list:nth-child(16) {
+         top: 770px;
+         animation-duration: 5s;
+         animation-delay: 166s;
+      }
+
+
+      .logo {
+         position: absolute;
+         margin-top: 100px;
+         margin-left: 100px;
+         z-index: 9;
+      }
+
+      .star {
+         position: absolute;
+         z-index: -1;
+         opacity: 40%;
+      }
+
+      .word {
+         opacity: 0;
+         animation: fadein 2s forwards;
+      }
+
+      .slidecontainer {
+         position: absolute;
+         width: 20%;
+         margin: 0 auto;
+         margin-left: 150px;
+         margin-top: 870px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         cursor: pointer;
+      }
+
+      .slider {
+         position: absolute;
+         -webkit-appearance: none;
+         width: 100%;
+         height: 4px;
+         background: linear-gradient(90deg, white 60%, white 60%);
+         outline: none;
+         opacity: 70%;
+         cursor: pointer;
+      }
+
+      .play {
+         position: absolute;
+         cursor: pointer;
+         width: 40px;
+         margin-left: 90px;
+         margin-top: 850px;
+         animation-play-state: running;
+      }
+
+      @keyframes myMove {
+         from {
+            left: 0px;
+         }
+
+         to {
+            left: 1200px;
+         }
+      }
+
+      @keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+
+   </style>
+</head>
+
+<body>
+   <div>
+      <img src="logo.png" class="logo" width="450px">
+      <div class="wrap" id="wrap">
+         <div class="list"><img src="l1.png" height="30px"></div>
+         <div class="list"><img src="l2.png" height="30px"></div>
+         <div class="list"><img src="l3.png" height="30px"></div>
+         <div class="list"><img src="l4.png" height="30px"></div>
+         <div class="list"><img src="l5.png" height="30px"></div>
+         <div class="list"><img src="l6.png" height="30px"></div>
+         <div class="list"><img src="l7.png" height="30px"></div>
+         <div class="list"><img src="l8.png" height="30px"></div>
+         <div class="list"><img src="l9.png" height="30px"></div>
+         <div class="list"><img src="l10.png" height="30px"></div>
+         <div class="list"><img src="l11.png" height="30px"></div>
+         <div class="list"><img src="l12.png" height="30px"></div>
+         <div class="list"><img src="l13.png" height="30px"></div>
+         <div class="list"><img src="l14.png" height="30px"></div>
+         <div class="list"><img src="l15.png" height="30px"></div>
+         <div class="list"><img src="l16.png" height="30px"></div>
+      </div>
+
+      <div>
+         <img src="play.png" id="play" class="play">
+         <audio id="kingofdanceSnd" src="kingofdance.mp3"></audio>
+      </div>
+
+      <div class="slidecontainer">
+         <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      </div>
+   </div>
+
+
+
+
+   <script type="text/javascript">
+
+
+      myRange.value = 80;
+
+      myRange.oninput = function () {
+         kingofdanceSnd.volume = myRange.value / 100;
+      }
+
+
+
+      var state = false;
+
+      play.onclick = function () {
+         if (state) {
+            document.getElementById("wrap").style.display = "none";
+            kingofdanceSnd.pause();
+            play.src = "play.png";
+            state = false;
+         }
+         else {
+            document.getElementById("wrap").style.display = "inline";
+            kingofdanceSnd.play();
+            play.src = "stop.png";
+            state = true;
+         }
+      }
+
+      for (var i = 0; i < 100; i++) {
+         var t = document.createElement("img");
+
+         t.src = "star.png";
+         t.className = "star";
+         t.style.width = "12px";
+         t.style.height = "auto";
+         t.style.left = Math.random() * screen.availWidth + "px";
+         t.style.top = Math.random() * screen.availHeight + "px";
+         document.body.appendChild(t);
+      }
+
+
+      function randomBH(min, max) {
+         min = Math.ceil(min);
+         max = Math.floor(max);
+         return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+   </script>
+
+
+
+</body>
+
+</html>
